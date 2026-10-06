@@ -8,7 +8,7 @@ from ai_compare import compare_images
 
 
 BASE_DIR = Path(__file__).resolve().parent
-UPLOAD_DIR = BASE_DIR / "uploads"
+UPLOAD_DIR = Path(tempfile.gettempdir()) / "uploads"
 UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
 
 
